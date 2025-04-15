@@ -1,0 +1,125 @@
+/* App.css */
+.container-service2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.service2-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4rem;
+  line-height: 1.2;
+}
+
+.cards-container-service2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.card-service2 {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.card-service2:hover {
+  transform: translateY(-5px);
+}
+
+.card-image-service2 {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.service2-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.service2-card-description {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+
+/* Medium Screens - Tablets (750px) */
+@media (max-width: 750px) {
+  .container-service2 {
+    padding: 1.5rem;
+  }
+
+  .service2-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .cards-container-service2 {
+    grid-template-columns: 1fr; /* Stack cards in a single column */
+    gap: 1.5rem;
+  }
+
+  .card-service2 {
+    padding: 1.5rem;
+  }
+
+  .card-image-service2 {
+    width: 180px; /* Reduce image size slightly */
+  }
+
+  .service2-card-title {
+    font-size: 1.3rem;
+  }
+
+  .service2-card-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens - Mobile (320px) */
+@media (max-width: 320px) {
+  .container-service2 {
+    padding: 1rem;
+  }
+
+  .service2-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .cards-container-service2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .card-service2 {
+    padding: 1rem;
+  }
+
+  .card-image-service2 {
+    width: 150px; /* Further reduce image size */
+    margin-bottom: 1rem;
+  }
+
+  .service2-card-title {
+    font-size: 1.2rem;
+  }
+
+  .service2-card-description {
+    font-size: 0.9rem;
+  }
+}

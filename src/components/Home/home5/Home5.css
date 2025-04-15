@@ -1,0 +1,147 @@
+.how-it-works {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.left, .right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.video-thumbnail-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#vedio-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.right {
+  text-align: left;
+}
+
+.text-container {
+  max-width: 500px;
+}
+
+.text-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.text-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-container li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-container .icon {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+#cta-button {
+  /* background: #31cb3e; */
+  color: rgb(87, 214, 68);
+  border: 1px solid #31cb3e;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#cta-button:hover {
+  background: rgb(87, 214, 68);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .left, .right {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+  }
+
+  .video-container {
+    max-width: 100%;
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding: 20px;
+    text-align: left;
+  }
+  .text-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .text-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .text-container li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+}
